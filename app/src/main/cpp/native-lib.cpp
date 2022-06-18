@@ -15,7 +15,7 @@ PFNGLCLEARCOLORPROC cb_glClearColor = nullptr;
 
 // new function
 void hook_glClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha) {
-  LOGD("hook call glClear: (%f, %f, %f, %f)", red, green, blue, alpha);
+  LOGD("hook call glClearColor: (%f, %f, %f, %f)", red, green, blue, alpha);
   if (cb_glClearColor) {
     cb_glClearColor(0.f, 0.f, 1.f, 1.f);
   }
