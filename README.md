@@ -1,6 +1,10 @@
 # TLSHook
 Hook opengl es function call on Android by replacing TLS entry point, compatible with Android 5.x ~ 12.x
 
+![](screenshot/tlshook.png)
+
+For more details see [https://robot9.me/android-tls-hook/](https://robot9.me/android-tls-hook/)
+
 ## Api
 ### init hook
 ```cpp
@@ -89,7 +93,7 @@ cb_glClearColor(0.f, 0.f, 1.f, 1.f);
 
 the GLSurfaceView show with color blue
 
-![](screenshot/demo.png)
+![](screenshot/demo.jpg)
 
 
 ## License
