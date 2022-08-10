@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         surfaceView.setRenderer(new GLSurfaceView.Renderer() {
             @Override
             public void onSurfaceCreated(GL10 gl, EGLConfig config) {
+                hookEGLContext();
             }
 
             @Override
@@ -59,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public native boolean hookTestStart();
+
+    public native void hookEGLContext();
 
     public native void hookTestStop();
 }
